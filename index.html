@@ -9,15 +9,49 @@ Please read the README below in the JS Editor before beginning. Feel free to del
 -->
 <head>
   <style>
-    #image {
+   /*#image,#image2,#image3,#image4 {
       display: flex;
       width: 100%;
       height: auto;
       max-width: 325px;
       margin: auto;
       justify-content: center; 
-    }
+    }*/
+  
     
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:auto;
+  max-width: 620px;
+  
+}
+    .column {
+     /* flex: 100%;
+      max-width: 100%;*/
+      align-content: space-between;
+}
+    
+    #image{
+      filter: hue-rotate(90deg) saturate(5); 
+      max-width:300px;
+      
+    }
+    #image2{
+        filter: hue-rotate(180deg) saturate(5); 
+        max-width:300px;
+     
+    }
+    #image3{
+        filter: hue-rotate(270deg) saturate(5);
+        max-width:300px;  
+    }
+    #image4{
+        filter: hue-rotate(360deg) saturate(5);
+        max-width:300px;
+    }
+      
     #title{
       display: flex;
       justify-content: center;
@@ -32,9 +66,14 @@ Please read the README below in the JS Editor before beginning. Feel free to del
       display: flex;
       justify-content: center;
     }
+    
     p {
       display: flex;
       justify-content: center;
+      max-width: 400px;
+      width: 100%;
+      margin:auto;
+
     }
     
   </style>
@@ -45,8 +84,17 @@ Please read the README below in the JS Editor before beginning. Feel free to del
 
 <body>
   <h1 id="title">Marcus Aurelius</h1>
-  <div id="img-div">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image">
+  <div id="img-div" class="row">
+    <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image2" >
+    </div>
+    <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image3" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image4" >
+    </div>
+  </div>
+  <div>
       <p id="img-caption">Image of Marcus Aurelius<p>
     
     <div id="tribute-info"><p>“At dawn, when you have trouble getting out of bed, tell yourself: “I have to go to work — as a human being. What do I have to complain of, if I’m going to do what I was born for — the things I was brought into the world to do? Or is this what I was created for? To huddle under the blankets and stay warm?”</p>
