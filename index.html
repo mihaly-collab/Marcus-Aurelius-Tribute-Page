@@ -1,12 +1,3 @@
-<!-- 
-
-Hello Camper!
-
-Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
 <head>
   <style>
  
@@ -26,8 +17,15 @@ Please read the README below in the JS Editor before beginning. Feel free to del
       max-width: 100%;*/
       align-content: space-between;
 }
-    
     #image{
+      display: flex;
+      justify-content: center;
+      margin:auto;
+      width:100%;
+      max-width: 300px;
+      
+    }
+    #image1{
       filter: hue-rotate(90deg) saturate(5); 
       max-width:300px;
       
@@ -78,9 +76,11 @@ Please read the README below in the JS Editor before beginning. Feel free to del
 
 <body>
   <h1 id="title">Marcus Aurelius</h1>
-  <div id="img-div" class="row">
-    <div class="column">
+  <div id="img-div">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image" >
+    <div class="row">
+    <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image1" >
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Metropolitan_Marcus_Aurelius_Roman_2C_AD_2.JPG" id="image2" >
     </div>
     <div class="column">
@@ -90,7 +90,7 @@ Please read the README below in the JS Editor before beginning. Feel free to del
   </div>
   <div>
       <p id="img-caption">Image of Marcus Aurelius<p>
-    
+    </div>  
     <div id="tribute-info"><p>“At dawn, when you have trouble getting out of bed, tell yourself: “I have to go to work — as a human being. What do I have to complain of, if I’m going to do what I was born for — the things I was brought into the world to do? Or is this what I was created for? To huddle under the blankets and stay warm?”</p>
 
 <p>So you were born to feel “nice”? Instead of doing things and experiencing them? Don’t you see the plants, the birds, the ants and spiders and bees going about their individual tasks, putting the world in order, as best they can? And you’re not willing to do your job as a human being? Why aren’t you running to do what your nature demands?</p>
